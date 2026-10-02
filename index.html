@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Digital — High-Impact Web & Tech Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-bolt"></i> Apex<span>Digital</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#calculator">Instant Quote</a>
+        <a href="#testimonials">Results</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="btn-icon" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-primary open-lead-modal">
+          <i class="fa-solid fa-paper-plane"></i> Get Started
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-badge">
+        <i class="fa-solid fa-rocket"></i> Premium Web & Digital Solutions
+      </div>
+      <h1>We Build Websites That Turn Visitors Into <span class="highlight">Paying Clients</span></h1>
+      <p class="hero-subtext">
+        Stop losing sales to low-converting sites. We design ultra-fast, high-converting digital platforms that generate qualified leads and drive revenue 24/7.
+      </p>
+      <div class="hero-cta-group">
+        <button class="btn btn-primary btn-lg open-lead-modal">
+          <i class="fa-solid fa-calendar-check"></i> Claim Free Strategy Call
+        </button>
+        <a href="#calculator" class="btn btn-secondary btn-lg">
+          <i class="fa-solid fa-calculator"></i> Calculate Project Cost
+        </a>
+      </div>
+      <div class="social-proof-strip">
+        <div class="proof-item">
+          <strong>98.4%</strong> Client Satisfaction
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <strong>$2.4M+</strong> Revenue Generated
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <strong>150+</strong> Projects Launched
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="section-container">
+      <div class="section-title">
+        <h2>Built to Drive Business Growth</h2>
+        <p>Choose the exact solution tailored to your business needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>High-Converting Websites</h3>
+          <p>Custom landing pages engineered to maximize sales, signups, and phone inquiries.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Mobile Responsive</li>
+            <li><i class="fa-solid fa-check"></i> SEO Optimized</li>
+            <li><i class="fa-solid fa-check"></i> Speed Loading Under 1s</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Lead Generation Engines</h3>
+          <p>Complete marketing funnels with interactive calculators, WhatsApp routing, and CRM capture.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Automated Lead Booking</li>
+            <li><i class="fa-solid fa-check"></i> Instant Price Calculators</li>
+            <li><i class="fa-solid fa-check"></i> Direct WhatsApp Integration</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>Custom SaaS & Web Portals</h3>
+          <p>Tailored web platforms, client portals, and inventory systems built for scale.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Database Integration</li>
+            <li><i class="fa-solid fa-check"></i> User Auth & Dashboards</li>
+            <li><i class="fa-solid fa-check"></i> Secure Payment Processing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Quote Calculator -->
+  <section id="calculator" class="calculator-section">
+    <div class="section-container">
+      <div class="section-title">
+        <h2>Instant Cost & Timeline Estimator</h2>
+        <p>Customize your requirements below to get an instant project estimate.</p>
+      </div>
+      <div class="calculator-card">
+        <div class="calc-options">
+          <div class="calc-group">
+            <label><i class="fa-solid fa-cubes"></i> Select Project Type</label>
+            <select id="calc-type" class="calc-select">
+              <option value="landing" data-price="350" data-days="3">High-Converting Landing Page ($350)</option>
+              <option value="business" data-price="650" data-days="7">Full Business Website ($650)</option>
+              <option value="saas" data-price="1200" data-days="14">Custom Web Application / SaaS ($1,200)</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label><i class="fa-solid fa-plus-circle"></i> Add-On Features</label>
+            <div class="checkbox-grid">
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-check" data-price="100" data-days="2" data-name="SEO Optimization"> SEO & Search Ranking ($100)
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-check" data-price="150" data-days="2" data-name="WhatsApp Lead Automation"> WhatsApp Lead Automation ($150)
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-check" data-price="200" data-days="3" data-name="Database/Auth Integration"> Database & Auth System ($200)
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-check" data-price="120" data-days="1" data-name="Copywriting"> Professional Copywriting ($120)
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-summary">
+          <h3>Project Estimate Summary</h3>
+          <div class="summary-item">
+            <span>Estimated Investment:</span>
+            <strong id="calc-total-price">$350</strong>
+          </div>
+          <div class="summary-item">
+            <span>Turnaround Time:</span>
+            <strong id="calc-total-days">3 Business Days</strong>
+          </div>
+          <button id="book-quote-btn" class="btn btn-success btn-block">
+            <i class="fa-brands fa-whatsapp"></i> Lock In Estimate via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="section-container">
+      <div class="section-title">
+        <h2>Trusted by Industry Leaders</h2>
+        <p>See what our clients say about our work.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"The team built our landing page in under 5 days. Our booking rate jumped by 40% in the first week!"</p>
+          <div class="client-info">
+            <strong>David K.</strong>
+            <span>CEO, Vantage Logistics</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"The instant quote calculator alone brought us 25 new inquiries in 48 hours. Absolute game changer."</p>
+          <div class="client-info">
+            <strong>Sarah M.</strong>
+            <span>Founder, Bloom Legal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture Form Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="contact-box">
+        <div class="contact-text">
+          <h2>Ready to Scale Your Business?</h2>
+          <p>Fill out the form to request a custom consultation, or connect directly with our engineers.</p>
+          <div class="contact-details">
+            <p><i class="fa-solid fa-envelope"></i> contact@atoyebiadebarebayo.com</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +234 7040416469</p>
+          </div>
+        </div>
+        <form id="main-lead-form" class="lead-form">
+          <div class="form-group">
+            <label for="lead-name">Your Full Name *</label>
+            <input type="text" id="lead-name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="lead-email">Email Address *</label>
+            <input type="email" id="lead-email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="lead-phone">Phone / WhatsApp Number *</label>
+            <input type="tel" id="lead-phone" required placeholder="+1234567890">
+          </div>
+          <div class="form-group">
+            <label for="lead-message">Project Details</label>
+            <textarea id="lead-message" rows="3" placeholder="Tell us briefly about your business goals..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Submit Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Modal -->
+  <div id="lead-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Claim Your Free Strategy Call</h3>
+        <button id="close-modal-btn" class="close-btn">&times;</button>
+      </div>
+      <form id="modal-lead-form" class="lead-form">
+        <div class="form-group">
+          <label for="modal-name">Name *</label>
+          <input type="text" id="modal-name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="modal-email">Email *</label>
+          <input type="email" id="modal-email" required placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="modal-phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal-phone" required placeholder="+1234567890">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-solid fa-check-circle"></i> Confirm Booking
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Apex Digital. All rights reserved. High-Performance Digital Platforms.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
