@@ -6,6 +6,9 @@ LeadPulse is a sleek, modern lead generation platform engineered for digital age
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 ---
+## 🚀 Live Demo
+
+Explore the live application here:[https://leadpulses.netlify.app]
 
 ## ✨ Features
 
